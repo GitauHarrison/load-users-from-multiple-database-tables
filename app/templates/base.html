@@ -9,9 +9,9 @@
 <!-- The title of our application is defined here -->
 {% block title %}
     {% if title %}
-        {{ title }} - Flask Tables
+        {{ title }} - Database Users
     {% else %}
-        Beautiful Flask Tables
+        Load Database Users
     {% endif %}
 {% endblock %}
 
@@ -26,11 +26,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=" # ">Flask Server</a>
+            <a class="navbar-brand" href=" # ">Users</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
             <ul class="nav navbar-nav navbar-right">
-                <li><a href=" # ">Documentation</a></li>
+                <li><a href=" {{ url_for('register_student') }} ">Register Student</a></li>
+                <li><a href=" {{ url_for('register_teacher') }} ">Register Teacher</a></li>
             </ul>                       
         </div>
     </div>
