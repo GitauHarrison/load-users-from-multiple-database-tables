@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block app_context %}
+<div class="row">
+    <div class="col-sm12">
+        <h1>Hi, {{ student.username }}</h1>
+        <p>Email: {{ student.email }}</p>
+    </div>
+</div>
+{% endblock %}
